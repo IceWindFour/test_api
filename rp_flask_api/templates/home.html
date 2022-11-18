@@ -8,8 +8,12 @@
 </head>
 <body>
     <h1>
-        It's Sheikhs world and we're all just living in it!
+        Hello, People!
     </h1>
-    <p>Just working on life.</p>
+    <ul>
+        {% for person in people %}
+        <li>{{ person.fname }} {{ person.lname }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
